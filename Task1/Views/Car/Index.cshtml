@@ -1,0 +1,15 @@
+﻿@model List<Car>;
+@{
+    ViewData["Title"] = "Index";
+}
+<ul>
+    @{
+        foreach (Car car in Model)
+        {
+            <li><h3>Car Marka - @car.Marka</h3></li>
+            <li><h3>Car Model - @car.Model</h3></li>
+            <li><h3>Car Year - @car.Year</h3></li>
+            <li><h3>Car Yurus - @car.Yurus</h3></li>
+        }
+    }
+</ul>

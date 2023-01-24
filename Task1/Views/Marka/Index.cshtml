@@ -1,0 +1,13 @@
+﻿@model List<Marka>;
+@{
+    ViewData["Title"] = "Index";
+}
+<ul>
+    @{
+        foreach (Marka marka in Model)
+        {
+            <li><a href="http://localhost:55060/Model/index/@marka.Id">@marka.Name</a></li>
+        }
+    }
+</ul>
+

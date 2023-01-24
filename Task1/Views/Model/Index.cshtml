@@ -1,0 +1,13 @@
+﻿@model List<Model>;
+@{
+    ViewData["Title"] = "Index";
+}
+
+<ul>
+    @{
+        foreach (Model mode in Model)
+        {
+            <li><a href="http://localhost:55060/Car/index/@mode.Id">@mode.Name</a></li>
+        }
+    }
+</ul>

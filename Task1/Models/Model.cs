@@ -5,6 +5,7 @@
         public int Id { get; set; }
         public string Name { get; set; }
         public string Marka { get; set; }
+        public int IdForModel { get; set; }
         public int Yurus { get; set; }
         public int Year { get; set; }
     }

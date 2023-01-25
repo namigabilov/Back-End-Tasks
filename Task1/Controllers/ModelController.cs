@@ -11,16 +11,16 @@ namespace Task1.Controllers
         {
             _models = new List<Model>
             {
-                new Model{ Id = 1,Name ="X5",Marka = "BMW" ,Year =2000 ,Yurus =1923 },
-                new Model{ Id = 1,Name ="X7",Marka = "BMW" ,Year =2000 ,Yurus =1923},
-                new Model{ Id = 1,Name ="M5",Marka = "BMW" ,Year =2000 ,Yurus =1923},
-                new Model{ Id = 2,Name ="S500",Marka = "Mercedes" ,Year =2000 ,Yurus =1923},
-                new Model{ Id = 2,Name ="S400",Marka = "Mercedes" ,Year =2000 ,Yurus =1923},
-                new Model{ Id = 2,Name ="Sl500",Marka = "Mercedes" ,Year =2000 ,Yurus =1923},
-                new Model{ Id = 2,Name ="C200",Marka = "Mercedes" ,Year =2000 ,Yurus =1923},
-                new Model{ Id = 3,Name ="Model-S",Marka = "Tesla" ,Year =2000 ,Yurus =1923},
-                new Model{ Id = 3,Name ="Model-Y",Marka = "Tesla" ,Year =2000 ,Yurus =1923},
-                new Model{ Id = 3,Name ="Model-X",Marka = "Tesla" ,Year =2000 ,Yurus =1923},
+                new Model{ Id = 1,Name ="X5",Marka = "BMW" ,Year =2000 ,Yurus =1923,IdForModel = 1 },
+                new Model{ Id = 1,Name ="X7",Marka = "BMW" ,Year =2000 ,Yurus =1923 ,IdForModel = 2},
+                new Model{ Id = 1,Name ="M5",Marka = "BMW" ,Year =2000 ,Yurus =1923,IdForModel = 3},
+                new Model{ Id = 2,Name ="S500",Marka = "Mercedes" ,Year =2000 ,Yurus =1923 ,IdForModel = 4},
+                new Model{ Id = 2,Name ="S400",Marka = "Mercedes" ,Year =2000 ,Yurus =1923 ,IdForModel = 5},
+                new Model{ Id = 2,Name ="Sl500",Marka = "Mercedes" ,Year =2000 ,Yurus =1923 , IdForModel = 6 },
+                new Model{ Id = 2,Name ="C200",Marka = "Mercedes" ,Year =2000 ,Yurus =1923,IdForModel = 7},
+                new Model{ Id = 3,Name ="Model-S",Marka = "Tesla" ,Year =2000 ,Yurus =1923 ,IdForModel = 8},
+                new Model{ Id = 3,Name ="Model-Y",Marka = "Tesla" ,Year =2000 ,Yurus =1923 , IdForModel =9},
+                new Model{ Id = 3,Name ="Model-X",Marka = "Tesla" ,Year =2000 ,Yurus =1923,IdForModel = 10},
             };
         }
         public IActionResult Index(int? id)
